@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tracer</title>
+    <link rel="stylesheet" type="text/css" href="css/prism.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <button onclick='tracer.init(tracer.tree.root.childs)'>Full Trace</button>
+    <button onclick='tracer.init(tracer.tree.leafs())'>Only Leafs</button>
+
+    <div class="output">
+      <span class="zero"></span>
+    </div>
+
+    <script type="text/javascript" src="trace.json"></script>
+    <script type="text/javascript" src="js/helpers.js"></script>
+    <script type="text/javascript" src="js/prism.js"></script>
+    <script type="text/javascript" src="js/prism_file_highlight.js"></script>
+    <script type="text/javascript" src="js/execution_tree.js"></script>
+    <script type="text/javascript" src="js/tracer.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
+button {
+    padding: 0.3rem 0.5rem;
+}
+
+pre {
+    height: 15em;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.output {
+    margin-top: 1rem;
+}
+
+.line-highlight {
+    background: #ffc0cb5e;
+}
+
+.row {
+    display: grid;
+    grid-column-gap: 0.5em;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.call {
+    grid-column: 1 / 8;
+}
+
+.debug {
+    grid-column: 8 / 11;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent.tabcontent-params {
+    display: block;
+}
+
+.tab-buttons {
+    height: 22px;
+    margin-top: 0;
+}
