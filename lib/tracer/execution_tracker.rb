@@ -22,8 +22,8 @@ module Tracer
           # the method called (aka caller(1,1)), or the method that has called
           # the method that is returning something (aka caller(1,1)).
           #
-          handle(point, caller(2, 1).first)
-          if ponint.path =~ %r{/var/www/hosting-services/app/controllers/sites/domains_controller.rb}
+          #handle(point, caller(2, 1).first)
+          if point.path =~ %r{/var/www/hosting-services/app/controllers/sites/domains_controller.rb}
             trace_history << {
               event: point.event,
               class: point.defined_class.to_s,
