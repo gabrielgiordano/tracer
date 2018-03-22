@@ -34,6 +34,7 @@ module Tracer
               # We are using inspect here to avoid performance issues
               return: point.return_value.pretty_inspect
             }
+          end
         end
       end
 
